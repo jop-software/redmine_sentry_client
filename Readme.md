@@ -17,8 +17,8 @@ Please provide you'r sentry dsn in the plugin configuration.
 Keep in mind to restart redmine after adding the DSN, because the sentry client only gets registerd if this configuration is provided
 
 ## Test
-You can test the integration by accessing the `/sentry` route.   
-This will raise an internal error that will get reported to sentry
+In the configuration of the plugin is a button to trigger a test error.  
+Alternatively you can visit the `/sentry` route to trigger the same behaviour
 
 ## License
 See [LICENSE](./LICENSE) file for more information
