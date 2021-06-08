@@ -3,7 +3,7 @@ Redmine::Plugin.register :sentry_client do
   author 'jop-software Inh. Johannes Przymusinski'
   description 'This plugins integrates the sentry sdk to report internal redmine errors to sentry'
   version '0.0.1'
-  url 'http://jop-software.de'
+  url 'https://github.com/jop-software/redmine-sentry-client'
   author_url 'http://jop-software.de'
   settings default: {'empty' => true}, partial: 'settings/sentry_settings'
 end
