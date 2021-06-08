@@ -23,4 +23,4 @@ This will raise an internal error that will get reported to sentry
 ## License
 See [LICENSE](./LICENSE) file for more information
 
-<p align="center">&copy; 2021 [jop-software Inh. Johannes Przymusinski](https://jop-software.de)</p>
+<p align="center">&copy; 2021 <a href="https://jop-software.de">jop-software Inh. Johannes Przymusinski</a></p>
