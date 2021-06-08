@@ -3,6 +3,8 @@
     <p>Report internal redmine errors to sentry</p>
 </div>
 
+[![GitHub license](https://img.shields.io/github/license/jop-software/redmine-sentry-client?style=for-the-badge)](https://github.com/jop-software/redmine-sentry-client/blob/main/LICENSE)
+
 ## Introduction
 This redmine plugin allows you to specify a sentry dsn, to report errors.  
 The plugin is tested with redmine version **4.2.1**
