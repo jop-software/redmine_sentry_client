@@ -1,5 +1,5 @@
 Redmine::Plugin.register :sentry_client do
-  name 'Sentry Client plugin test'
+  name 'Sentry Client'
   author 'jop-software Inh. Johannes Przymusinski'
   description 'This plugins integrates the sentry sdk to report internal redmine errors to sentry'
   version '0.0.1'
