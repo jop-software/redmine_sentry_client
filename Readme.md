@@ -3,7 +3,9 @@
     <p>Report internal redmine errors to sentry</p>
 </div>
 
-## Installation
+## Introduction
+This redmine plugin allows you to specify a sentry dsn, to report errors.  
+The plugin is tested with redmine version **4.2.1**
 
 1. Install dependencies with `bundle install`
 2. Restart redmine
