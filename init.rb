@@ -8,17 +8,12 @@ Redmine::Plugin.register :sentry_client do
   settings default: {'empty' => true}, partial: 'settings/sentry_settings'
 end
 
+# initialize sentry only if we have a dsn set
 if Setting.plugin_sentry_client['dsn']
   Sentry.init do |config|
     config.dsn = Setting.plugin_sentry_client['dsn']
     config.breadcrumbs_logger = [:active_support_logger, :http_logger]
   
-    # To activate performance monitoring, set one of these options.
-    # We recommend adjusting the value in production:
     config.traces_sample_rate = 0.5
-    # or
-    config.traces_sampler = lambda do |context|
-      true
-    end
   end
 end
