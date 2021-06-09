@@ -1,3 +1,6 @@
 # English strings go here for Rails i18n
 en:
-  # my_label: "My label"
+  config_dsn: "Sentry DSN"
+  config_environment: "Sentry environment"
+  config_test_exception: "Trigger test exception"
+  config_disclamer: "We don't initialize sentry if you don't provide a DSN. Therefore, please restart redmine after changing settings here!"
