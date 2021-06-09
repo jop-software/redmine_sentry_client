@@ -3,4 +3,4 @@ en:
   config_dsn: "Sentry DSN"
   config_environment: "Sentry environment"
   config_test_exception: "Trigger test exception"
-  config_disclamer: "We don't initialize sentry if you don't provide a DSN. Therefore, please restart redmine after changing settings here!"
+  config_disclamer: "You need to restart redmine, if you change configurations here!"
