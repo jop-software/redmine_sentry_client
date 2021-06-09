@@ -1,2 +1,0 @@
-module SentryExampleHelper
-end
