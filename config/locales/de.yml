@@ -1,0 +1,6 @@
+# German strings go here for Rails i18n
+de:
+  config_dsn: "Sentry DSN"
+  config_environment: "Sentry environment"
+  config_test_exception: "Löse Test-Fehler aus"
+  config_disclamer: "Redmine muss neu gestartet werden, wenn hier Änderungen vorgenommen werden!"
