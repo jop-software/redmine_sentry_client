@@ -1,19 +1,15 @@
-<table style="width: 100%">
-  <tbody>
-    <tr>
-      <th>Sentry DSN</th>
-      <td>
-        <input type="text" id="dsn" 
-                           value="<%= settings['dsn'] %>" 
-                           name="settings[dsn]"
-                           style="width: 100%" >
-      </td>
-    </tr>
-    <tr>
-      <td colspan="2">  
-        <button type="button" style="width: 100%" onclick="window.location.href = '/sentry'">Trigger test Exception</button>
-      </td>
-    </tr>
-  </tbody>
-</table>
-<p><b>We don't initialize sentry if you don't provide a DSN. Therefore, please restart redmine after changing settings here!</b></p>
+<div id="senty-client-settings-container">
+  <p>
+  <label>Sentry DSN</label>
+  <input type="text" id="dsn" value="<%= settings['dsn'] %>" name="settings[dsn]" style="width:100%;">
+  </p>
+  <p>
+  <label>Sentry Environment</label>
+  <input type="text" id="environment" value="<%= settings['environment'] %>" name="settings[environment]" style="width:100%;">
+  </p>
+  <p>
+  <label>Test</label>
+  <button type="button" style="width: 95%" onclick="window.location.href = '/sentry'">Trigger test exception</button>
+  </p>
+</div>
+<p style="align:center;"><b>We don't initialize sentry if you don't provide a DSN. Therefore, please restart redmine after changing settings here!</b></p>
