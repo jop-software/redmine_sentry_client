@@ -1,4 +1,4 @@
-require File.join(File.dirname(__FILE__), 'app/helpers/sentry_helper.rb')
+require 'redmine'
 
 Redmine::Plugin.register :redmine_sentry_client do
   name 'Sentry Client'
@@ -10,4 +10,4 @@ Redmine::Plugin.register :redmine_sentry_client do
   settings default: {'empty' => true}, partial: 'settings/sentry_settings'
 end
 
-SentryHelper.init()
+require 'redmine_sentry_client'
