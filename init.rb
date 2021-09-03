@@ -1,6 +1,6 @@
 require File.join(File.dirname(__FILE__), 'app/helpers/sentry_helper.rb')
 
-Redmine::Plugin.register :sentry_client do
+Redmine::Plugin.register :redmine_sentry_client do
   name 'Sentry Client'
   author 'jop-software Inh. Johannes Przymusinski'
   description 'This plugins integrates the sentry sdk to report internal redmine errors to sentry'
