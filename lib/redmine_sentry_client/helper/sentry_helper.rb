@@ -7,8 +7,7 @@ module RedmineSentryClient
                     config.environment = self.environment()
                     config.breadcrumbs_logger = [:active_support_logger, :http_logger]
         
-                    # TODO: Allow customisation of traces_sample_rate
-                    config.traces_sample_rate = 0.5
+                    config.traces_sample_rate = self.traces_sample_rate()
                 end
             end
         
@@ -21,6 +20,11 @@ module RedmineSentryClient
             ## get the Sentry DSN
             def self.dsn()
                 return Setting.plugin_redmine_sentry_client['dsn']
+            end
+
+            ## get the Sentry traces_sample_rate configuration
+            def self.traces_sample_rate()
+                return Setting.plugin_redmine_sentry_client['traces_sample_rate'].to_d
             end
         end
     end    
