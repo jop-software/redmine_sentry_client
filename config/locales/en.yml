@@ -4,3 +4,4 @@ en:
   config_environment: "Sentry environment"
   config_test_exception: "Trigger test exception"
   config_disclamer: "You need to restart redmine, if you change configurations here!"
+  config_traces_sample_rate: "Sentry traces_sample_rate"
