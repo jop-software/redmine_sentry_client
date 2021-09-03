@@ -2,7 +2,6 @@ module RedmineSentryClient
     module Helper
         class SentryHelper
             def self.init()
-                puts "SentryHelper.init()"
                 Sentry.init do |config|
                     config.dsn = self.dsn()
                     config.environment = self.environment()
