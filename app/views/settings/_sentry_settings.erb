@@ -1,15 +1,18 @@
+<style>
+p input { width: 100%; }
+</style>
 <div id="senty-client-settings-container">
   <p>
   <label><%= l(:config_dsn) %></label>
-  <input type="text" id="dsn" value="<%= settings['dsn'] %>" name="settings[dsn]" style="width:100%;">
+  <%= text_field_tag 'settings[dsn]', RedmineSentryClient.dsn %>
   </p>
   <p>
   <label> <%=l(:config_environment) %></label>
-  <input type="text" id="environment" value="<%= settings['environment'] %>" name="settings[environment]" style="width:100%;">
+  <%= text_field_tag 'settings[environment]', RedmineSentryClient.environment %>
   </p>
   <p>
   <label> <%=l(:config_traces_sample_rate) %></label>
-  <input type="number" id="traces_sample_rate" value="<%= settings['traces_sample_rate'] %>" name="settings[traces_sample_rate]" style="width:100%;" max="1.0" min="0.0" step="0.01">
+  <%= number_field_tag 'settings[traces_sample_rate]', RedmineSentryClient.traces_sample_rate, :min => 0, :max => 1, :step => 0.01 %>
   </p>
   <p>
   <label>Test</label>
