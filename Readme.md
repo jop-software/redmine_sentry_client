@@ -11,9 +11,11 @@ This redmine plugin allows you to specify a sentry dsn, to report errors.
 The plugin is tested with redmine version **4.2**
 
 ## Installation
-1. Clone this repository into your `plugins` directory
-2. Install dependencies with `bundle install`
-3. Restart redmine
+You can follow the default way to install redmine plugins.
+1. Download the plugin sources. Either from the [Plugins Directory](https://redmine.org/plugins) or the [Git Repository](https://github.com/jop-software/redmine_sentry_client)
+1. unpack the downloaded archive into your `<redmine-installation>/plugins` directory.
+2. Install dependencies with `bundle install`.
+3. Restart redmine.
 
 ## Configuration
 Please provide you'r sentry dsn in the plugin configuration.  
