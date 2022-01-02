@@ -28,4 +28,4 @@ Alternatively you can visit the `/sentry` route to trigger the same behaviour
 ## License
 See [LICENSE](./LICENSE) file for more information
 
-<p align="center">&copy; 2021 <a href="https://jop-software.de">jop-software Inh. Johannes Przymusinski</a></p>
+<p align="center">&copy; 2021-2022 <a href="https://jop-software.de">jop-software Inh. Johannes Przymusinski</a></p>
