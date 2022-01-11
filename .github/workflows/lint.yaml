@@ -4,13 +4,14 @@ on: [ push, pull_request ]
 jobs:
   linting:
     name: Rubocop
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - uses: actions/setup-ruby@v1
-        with:
-          ruby-version: 2.6
-      - name: Install Rubocop
-        run: gem install rubocop
-      - name: Check code
-        run: rubocop
+    - uses: actions/checkout@v2
+    - uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: 2.6
+
+    - name: "Install rubocop"
+      run: "gem install rubocop"
+    - name: "Run rubocop"
+      run: "rubocop"
