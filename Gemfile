@@ -1,2 +1,4 @@
-gem "sentry-ruby"
-gem "sentry-rails"
+# frozen_string_literal: true
+
+gem 'sentry-rails'
+gem 'sentry-ruby'
