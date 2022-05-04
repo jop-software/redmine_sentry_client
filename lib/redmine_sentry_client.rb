@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'redmine_sentry_client/helper/sentry_helper'
+require File.expand_path('../redmine_sentry_client/helper/sentry_helper', __dir__)
 
 # Helper library to integrate sentry
 module RedmineSentryClient
