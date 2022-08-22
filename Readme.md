@@ -8,7 +8,12 @@
 
 ## Introduction
 This redmine plugin allows you to specify a sentry dsn, to report errors.  
-The plugin is tested with redmine version **4.2**
+The plugin is tested with redmine version **5.0**
+
+## Redmine Versions
+
+Version 2.x support redmine 5
+Version 1.x support redmine 4
 
 ## Installation
 You can follow the default way to install redmine plugins.
