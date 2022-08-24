@@ -13,7 +13,10 @@ The plugin is tested with redmine version **5.0**
 ## Redmine Versions
 
 
->
+| Plugin Version | Redmine Version |
+|---|---|
+| 1.x | 4.x |
+| 2.x | 5.x |
 
 ## Installation
 You can follow the default way to install redmine plugins.
@@ -25,6 +28,12 @@ You can follow the default way to install redmine plugins.
 ## Configuration
 Please provide you'r sentry dsn in the plugin configuration.  
 Keep in mind to restart redmine after adding the DSN, because the sentry client only gets registerd if this configuration is provided
+
+You also can configure some parts with environment variables:
+
+| Environment variable | Description | Default |
+| --- | --- | --- |
+| SENTRY_ACTIVE | Toogle weather the sentry integration should be active or not. | true |
 
 ## Test
 In the configuration of the plugin is a button to trigger a test error.  
