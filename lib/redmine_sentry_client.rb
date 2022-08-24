@@ -11,7 +11,7 @@ module RedmineSentryClient
       if ENV['SENTRY_ACTIVE'].present?
         ENV['SENTRY_ACTIVE']
       else
-        true
+        "true"
       end
     end
 
