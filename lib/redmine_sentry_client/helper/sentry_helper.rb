@@ -6,7 +6,7 @@ module RedmineSentryClient
     class SentryHelper
       def self.init
         # Check if the sentry integration is active.
-        return if RedmineSentryClient.active != "true"
+        return if RedmineSentryClient.active != 'true'
 
         Sentry.init do |config|
           config.dsn = RedmineSentryClient.dsn
