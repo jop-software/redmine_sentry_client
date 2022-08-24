@@ -12,4 +12,4 @@ Redmine::Plugin.register :redmine_sentry_client do
   settings default: { 'empty' => true }, partial: 'settings/sentry_settings'
 end
 
-require ::File.expand_path('../lib/redmine_sentry_client', __FILE__)
+require ::File.expand_path('lib/redmine_sentry_client', __dir__)
